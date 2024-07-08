@@ -26,4 +26,12 @@ public class CashbackHackServiceTest {
     void testRemainBoundaryValueSixth() {
         org.testng.Assert.assertEquals(1000,cashbackHackService.remain(1000));
     }
+    @org.testng.annotations.Test
+    void testRemainBoundaryValueSeventh() {
+        org.testng.Assert.assertEquals(100,cashbackHackService.remain(900));
+    }
+    @org.testng.annotations.Test
+    void testRemainBoundaryValueEighth() {
+        org.testng.Assert.assertEquals(0,cashbackHackService.remain(-1));
+    }
 }
